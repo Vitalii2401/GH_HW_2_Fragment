@@ -13,15 +13,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        openFrag(ListFragment.newInstance(), R.id.frameForList)
-        openFrag(SelectFragment.newInstance(), R.id.frameForSelect)
-    }
-
-    private fun openFrag(f: Fragment, idHolder: Int){
-        supportFragmentManager
-            .beginTransaction()
-            .replace(idHolder, f)
-            .commit()
     }
 }

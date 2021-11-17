@@ -6,25 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/frameForList"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragForList"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/frameForSelect"
+        app:layout_constraintBottom_toTopOf="@+id/fragForSelect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:name="com.example.hw2_fragment.ListFragment">
 
-    </FrameLayout>
+    </androidx.fragment.app.FragmentContainerView>
 
-    <FrameLayout
-        android:id="@+id/frameForSelect"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragForSelect"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </FrameLayout>
+        app:layout_constraintStart_toStartOf="parent"
+        android:name="com.example.hw2_fragment.SelectFragment">
+    </androidx.fragment.app.FragmentContainerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
