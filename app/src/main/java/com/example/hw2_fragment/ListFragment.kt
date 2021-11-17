@@ -14,7 +14,7 @@ import com.example.hw2_fragment.databinding.FragmentListBinding
 class ListFragment : Fragment() {
     lateinit var binding: FragmentListBinding
     private val dataModel: DataModel by activityViewModels()
-    var name = arrayOf("")
+    var name = arrayOf("Choose a country")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,11 +32,13 @@ class ListFragment : Fragment() {
                 "Italy" -> resources.getStringArray(R.array.Italy_auto)
                 "France" -> resources.getStringArray(R.array.France_auto)
                 "America" -> resources.getStringArray(R.array.American_auto)
-                else -> arrayOf("")
+                else -> arrayOf("Choose a country")
             }
             val adapter = context?.let { ArrayAdapter(it, android.R.layout.simple_list_item_1, name) }
             binding.listView.adapter = adapter
         })
+        val adapter = context?.let { ArrayAdapter(it, android.R.layout.simple_list_item_1, name) }
+        binding.listView.adapter = adapter
     }
 
     companion object {
