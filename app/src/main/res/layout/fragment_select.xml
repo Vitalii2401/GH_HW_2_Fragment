@@ -9,36 +9,35 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:padding="5dp">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnGermany"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Germany" />
+            android:text="Germany"
+            android:layout_marginStart="3dp" />
 
         <Button
             android:id="@+id/btnItaly"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Italy" />
+            android:text="Italy"
+            android:layout_marginStart="3dp"/>
 
         <Button
             android:id="@+id/btnFrance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="France" />
+            android:text="France"
+            android:layout_marginStart="3dp"/>
 
         <Button
             android:id="@+id/btnAmerica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="America" />
+            android:text="America"
+            android:layout_marginStart="3dp"/>
     </LinearLayout>
 
 </FrameLayout>
