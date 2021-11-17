@@ -1,5 +1,69 @@
 <resources>
-    <string name="app_name">hw2_fragment</string>
+    <string name="app_name">Car manufactures</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Germany_auto">
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Mercedes-Benz</item>
+        <item>Opel</item>
+        <item>Volkswagen</item>
+        <item>Porsche</item>
+        <item>Smart</item>
+        <item>Maybach</item>
+        <item>Alpina</item>
+        <item>Apal</item>
+        <item>Wiesmann</item>
+        <item>Ruf Automobile</item>
+        <item>Melkus</item>
+        <item>Mansory</item>
+    </string-array>
+
+    <string-array name="Italy_auto">
+        <item>Ferrari</item>
+        <item>Lamborghini</item>
+        <item>Maserati</item>
+        <item>Pagani</item>
+        <item>Fiat</item>
+        <item>Lancia</item>
+        <item>Alfa Romeo</item>
+        <item>Abarth</item>
+        <item>Iveco</item>
+        <item>LaFerrari</item>
+        <item>Gruppo Bertone</item>
+        <item>Fornasari</item>
+        <item>Covini Engineering</item>
+        <item>DR Motor</item>
+    </string-array>
+
+    <string-array name="France_auto">
+        <item>Citroën</item>
+        <item>Peugeot </item>
+        <item>Renault</item>
+        <item>Aixam-MEGA</item>
+        <item>Matra</item>
+        <item>Alpine</item>
+        <item>Bugatti Automobiles</item>
+        <item>Delahaye</item>
+        <item>Delage</item>
+        <item>Facel-Vega</item>
+    </string-array>
+
+    <string-array name="American_auto">
+        <item>Ford</item>
+        <item>Chrysler</item>
+        <item>Chevrolet</item>
+        <item>Cadillac</item>
+        <item>Buick</item>
+        <item>GMC</item>
+        <item>Lincoln</item>
+        <item>Dodge</item>
+        <item>Jeep</item>
+        <item>Tesla Motors</item>
+        <item>AC Propulsion</item>
+        <item>Polaris</item>
+        <item>Delorean</item>
+        <item>Panoz LLC</item>
+    </string-array>
 </resources>
