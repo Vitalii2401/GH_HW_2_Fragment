@@ -1,6 +1,7 @@
 package com.example.hw2_fragment
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -19,12 +20,23 @@ class ListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_list, container, false)
+        binding = FragmentListBinding.inflate(inflater)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
+        dataModel.message.observe(activity as LifecycleOwner, {
+            name = when(it){
+                "Germany" -> resources.getStringArray(R.array.Germany_auto)
+                "Italy" -> resources.getStringArray(R.array.Italy_auto)
+                "France" -> resources.getStringArray(R.array.France_auto)
+                "America" -> resources.getStringArray(R.array.American_auto)
+                else -> arrayOf("")
+            }
+            val adapter = context?.let { ArrayAdapter(it, android.R.layout.simple_list_item_1, name) }
+            binding.listView.adapter = adapter
+        })
     }
 
     companion object {
